@@ -36,7 +36,6 @@ public class LoginVerify extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String uname=request.getParameter("uname");
 		String pwd=request.getParameter("password");
-		System.out.println("salut");
 		if (uname.equals("admin") && pwd.equals("admin")) {
 			System.out.println("les identifiants sont corrects");
 		} else
